@@ -24,36 +24,6 @@ public class OnEntitySpawnEvent implements Listener{
 		if(!(e.getEntity() instanceof Zombie)) {
 			Location loc = e.getEntity().getLocation();
 			x = ran.nextInt(10) + 1;
-			if(x < 8) {
-				Zombie z = (Zombie)loc.getWorld().spawnEntity(loc, EntityType.ZOMBIE);
-				EntityEquipment ee = z.getEquipment();
-				ee.setHelmet(new ItemStack(Material.LEATHER_HELMET, 1));
-                Bukkit.broadcastMessage("8");
-			}
-            if(x < 6) {
-				Zombie z = (Zombie)loc.getWorld().spawnEntity(loc, EntityType.ZOMBIE);
-				EntityEquipment ee = z.getEquipment();
-				ee.setHelmet(new ItemStack(Material.LEATHER_HELMET, 1));
-                Bukkit.broadcastMessage("6");
-			}
-            if(x < 4) {
-				Zombie z = (Zombie)loc.getWorld().spawnEntity(loc, EntityType.ZOMBIE);
-				EntityEquipment ee = z.getEquipment();
-				ee.setHelmet(new ItemStack(Material.LEATHER_HELMET, 1));
-                Bukkit.broadcastMessage("4");
-			}
-            if(x < 2) {
-				Zombie z = (Zombie)loc.getWorld().spawnEntity(loc, EntityType.ZOMBIE);
-				EntityEquipment ee = z.getEquipment();
-				ee.setHelmet(new ItemStack(Material.LEATHER_HELMET, 1));
-                Bukkit.broadcastMessage("2");
-			}
-            if(x < 1) {
-				Zombie z = (Zombie)loc.getWorld().spawnEntity(loc, EntityType.ZOMBIE);
-				EntityEquipment ee = z.getEquipment();
-				ee.setHelmet(new ItemStack(Material.LEATHER_HELMET, 1));
-                Bukkit.broadcastMessage("1");
-			}
 		}
 	}
 }
