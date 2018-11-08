@@ -19,7 +19,7 @@ public class OnEntitySpawnEvent implements Listener{
 	public void onZombieSpawn(EntitySpawnEvent e) {
 		Random ran = new Random();
 		int x = 0;
-		if(!(e.getEntity() instanceof Zombie)) {
+		if(e.getEntity().getType().equals(EntityType.ZOMBIE)) {
 			Location loc = e.getEntity().getLocation();
 			x = ran.nextInt(5) + 1;
 			for(int i = x; i > 0; i--) {
