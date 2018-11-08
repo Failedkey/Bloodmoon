@@ -14,7 +14,7 @@ import org.bukkit.inventory.EntityEquipment;
 import org.bukkit.inventory.ItemStack;
 
 public class OnEntitySpawnEvent implements Listener{
-	//test
+	//Add some damn comments
 	@EventHandler(priority = EventPriority.HIGH)
 	public void onZombieSpawn(EntitySpawnEvent e) {
 		Random ran = new Random();
